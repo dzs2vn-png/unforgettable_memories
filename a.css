@@ -205,3 +205,23 @@ footer {
 .big-photo img {
   height: 320px;
 }
+/* KHUNG ẢNH / VIDEO RESPONSIVE */
+.photo-box img,
+.photo-box video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* ĐẢM BẢO KHUNG KHÔNG BỊ BỂ TRÊN MÀN HÌNH NHỎ */
+@media (max-width: 768px) {
+  .photo-box {
+    border-radius: 12px;
+  }
+
+  .big-photo img,
+  .big-photo video {
+    height: auto;
+  }
+}
